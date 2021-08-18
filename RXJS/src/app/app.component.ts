@@ -49,7 +49,8 @@ minhaPromise(nome : string) : Promise<string>{
 
 ngOnInit(): void {
   this.minhaPromise('Igor')
-  .then(result => console.log(result));
+  .then(result => console.log(result))
+  .catch(erro => console.log(erro));
 }
 
 }
